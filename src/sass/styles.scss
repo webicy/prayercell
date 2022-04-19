@@ -6,3 +6,15 @@
 @import "../../node_modules/bootstrap/scss/utilities";
 @import "../../node_modules/bootstrap/scss/utilities/api";
 @import "../../node_modules/bootstrap/scss/helpers";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/buttons";
+@import "color";
+@import "size";
+body{
+  letter-spacing: normal;
+}
+@media (prefers-color-scheme:light){
+  body{
+    letter-spacing: normal;
+  }
+}

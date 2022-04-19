@@ -2,3 +2,10 @@
 @import 'app-variables';
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
+// Create your own map
+$custom-colors: (
+  "accent": $accent,
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);

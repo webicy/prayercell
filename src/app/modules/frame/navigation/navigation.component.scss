@@ -1,1 +1,11 @@
-@use "src/sass/app-variables" as variable;
+@import "../../../../sass/bs-base";
+@import "../../../../sass/app-variables";
+
+nav{
+  background-color: $black;
+}
+@media (prefers-color-scheme:light){
+  nav{
+    background-color: $light;
+  }
+}
