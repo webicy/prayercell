@@ -47,7 +47,8 @@ import {
   ChevronsUp,
   List,
   RotateCcw,
-  RotateCw
+  RotateCw,
+  Calendar
 
 } from 'angular-feather/icons';
 const icons = {
@@ -96,7 +97,8 @@ const icons = {
   ChevronRight,
   ChevronsUp,
   RotateCcw,
-  RotateCw
+  RotateCw,
+  Calendar
 }
 @NgModule({
   declarations: [],

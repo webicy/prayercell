@@ -1,0 +1,17 @@
+<div class="featured-event-container d-flex
+
+">
+  <ng-container *ngIf="($eventList |async)?.length; else elseTemplate">
+    <ng-container *ngFor="let item of ($eventList |async)">
+      <app-event-box [event]="item"></app-event-box>
+    </ng-container>
+  </ng-container>
+  <ng-template #elseTemplate>
+    <div>
+      <div class="text-center">
+        <i-feather name="calendar" class="big fill-accent"></i-feather>
+        <p class="text-center">No Event</p>
+      </div>
+    </div>
+  </ng-template>
+</div>

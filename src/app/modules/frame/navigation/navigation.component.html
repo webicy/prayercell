@@ -1,8 +1,7 @@
 <nav class="position-sticky bottom-0 d-flex justify-content-between alaign-items-center px-2">
      <ng-container *ngFor="let route of routes">
-
-       <div class="nav-item p-3">
-         <a [routerLink]="[route.path]" [routerLinkActive]="['text-warning']" [title]="route.label">
+       <div class="nav-item">
+         <a [routerLink]="[route.path]" [routerLinkActive]="['text-warning', 'active']" [title]="route.label"  class="d-flex align-items-center justify-content-center">
           <i-feather name="{{route.icon}}" class="big fill-red"></i-feather>
          </a>
         </div>

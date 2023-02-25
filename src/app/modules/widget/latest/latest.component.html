@@ -1,0 +1,19 @@
+
+<div class="latest-media-conatiner d-flex flex-column">
+
+  <ng-container *ngIf="($list |async)?.length; else elseTemplate">
+
+    <ng-container *ngFor="let item of ($list |async)">
+      <app-media-box [media]="item"></app-media-box>
+    </ng-container>
+
+  </ng-container>
+  <ng-template #elseTemplate>
+    <div>
+      <div class="text-center">
+        <i-feather name="image" class="big fill-accent"></i-feather>
+        <p class="text-center">No Featured</p>
+      </div>
+    </div>
+  </ng-template>
+</div>
